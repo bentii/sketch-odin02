@@ -1,0 +1,54 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "topbar topbar"
+    "board board";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 7fr;
+}
+
+div {
+    /* outline: 1px solid red; */
+}
+
+#board {
+    grid-area: board;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+#head {
+    color: white;
+    grid-area: topbar;
+    justify-self: center;
+    margin-left: 11em;
+}
+
+.box {
+    background-color: white;
+    /* outline: 1px solid black; */
+}
+
+#quadro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 16cm;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+    min-width: 141px;
+}
+
+#slider {
+    display: flex;
+    flex-direction: column;
+}
+#slider label {
+    text-align: center;
+    font-size: 18px;
+}
